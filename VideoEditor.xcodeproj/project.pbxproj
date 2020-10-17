@@ -364,6 +364,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = "1.0-alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.VideoEditor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -390,6 +391,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = "1.0-alpha";
 				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.VideoEditor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
