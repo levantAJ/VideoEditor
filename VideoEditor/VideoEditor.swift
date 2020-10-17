@@ -5,8 +5,6 @@
 //  Created by Tai Le on 10/17/20.
 //
 
-import UIKit
-
-class VideoEditor: NSObject {
-
+final class VideoEditor {
+    static let shared = VideoEditor()
 }
