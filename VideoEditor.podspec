@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'VideoEditor'
-  s.version = '1.3'
+  s.version = '0.1'
   s.summary = 'VideoEditor facilitates manipulate Audios volume, merge multiple audios to video'
   s.description = <<-DESC
   VideoEditor written on Swift 5.0 by levantAJ

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		690FEB77253AF8BF004FCA43 /* VideoEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690FEB76253AF8BF004FCA43 /* VideoEditor.swift */; };
 		697BF772253AF3BF00033BE2 /* VideoEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697BF768253AF3BE00033BE2 /* VideoEditor.framework */; };
 		697BF777253AF3BF00033BE2 /* VideoEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697BF776253AF3BF00033BE2 /* VideoEditorTests.swift */; };
 		697BF779253AF3BF00033BE2 /* VideoEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 697BF76B253AF3BE00033BE2 /* VideoEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		690FEB76253AF8BF004FCA43 /* VideoEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditor.swift; sourceTree = "<group>"; };
 		697BF768253AF3BE00033BE2 /* VideoEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VideoEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		697BF76B253AF3BE00033BE2 /* VideoEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoEditor.h; sourceTree = "<group>"; };
 		697BF76C253AF3BE00033BE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				697BF76B253AF3BE00033BE2 /* VideoEditor.h */,
 				697BF76C253AF3BE00033BE2 /* Info.plist */,
+				690FEB76253AF8BF004FCA43 /* VideoEditor.swift */,
 			);
 			path = VideoEditor;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					697BF767253AF3BE00033BE2 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					697BF770253AF3BF00033BE2 = {
 						CreatedOnToolsVersion = 12.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				690FEB77253AF8BF004FCA43 /* VideoEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		697BF77D253AF3BF00033BE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 77L3Y6QAZL;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.levantAJ.VideoEditor;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		697BF77E253AF3BF00033BE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 77L3Y6QAZL;
@@ -389,6 +397,7 @@
 		697BF780253AF3BF00033BE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77L3Y6QAZL;
 				INFOPLIST_FILE = VideoEditorTests/Info.plist;
@@ -407,6 +416,7 @@
 		697BF781253AF3BF00033BE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77L3Y6QAZL;
 				INFOPLIST_FILE = VideoEditorTests/Info.plist;
