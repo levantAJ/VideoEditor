@@ -33,8 +33,9 @@ import VideoEditor
 1: Prepare the source video asset.
  
 ```swift
-let videoAsset = VideoEditor.Asset(localURL: yourVideoLocalURL, volume: 1, startTime: .zero, duration: videoDuration)
+let videoAsset = VideoEditor.Asset(localURL: yourVideoLocalURL, volume: 1)
 ``` 
+- With `volume`, you can able to adjust to volume of video in 0...1
 
 2: Prepare the audios
 
@@ -43,6 +44,10 @@ let firstAudioAsset = VideoEditor.Asset(localURL: firstAudioLocalURL, volume: 0.
 
 let secondAudioAsset = VideoEditor.Asset(localURL: secondAudioLocalURL, volume: 0.7, startTime: CMTime(seconds: 2, preferredTimescale: CMTimeScale(NSEC_PER_SEC)), duration: secondAudioDuration)
 ```
+
+- `startTime` is the point of time that you wanna add your audio into the final video, e.g. add set `startTime` as `CMTime(seconds: 3, preferredTimescale: CMTimeScale(NSEC_PER_SEC))` to tell engine to start add this audio from the third second of the final video.
+
+- `duration` indicates how long the audio will be added into the final video from the `startTime`. Usually set it equal to the audio asset duration. Set `nil` to tell the `duration` is its duration.
 
 3: Start to merge
 

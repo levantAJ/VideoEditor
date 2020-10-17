@@ -171,8 +171,8 @@ public extension VideoEditor {
         /// - Parameters:
         ///   - localURL: The asset local URL
         ///   - volume: Volume of the asset will be adjusted to the final video
-        ///   - startTime: The start time of the asset in the final video
-        ///   - duration: The duration of the asset will be added into the final video
+        ///   - startTime: The point of time that you wanna add your audio into the final video, e.g. add set `startTime` as `CMTime(seconds: 3, preferredTimescale: CMTimeScale(NSEC_PER_SEC))` to tell engine to start add this audio from the third second of the final video.
+        ///   - duration: Indicates how long the audio will be added into the final video from the `startTime`. Usually set it equals to the audio's duration. Set `nil` to tell the `duration` is its duration.
         public init(localURL: URL, volume: Float = 1,
                     startTime: CMTime = .zero, duration: CMTime? = nil) {
             self.localURL = localURL
