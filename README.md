@@ -2,7 +2,7 @@
 [![Pod Platform](https://cocoapod-badges.herokuapp.com/p/VideoEditor/badge.png)](http://cocoadocs.org/docsets/VideoEditor/)
 [![Pod License](https://cocoapod-badges.herokuapp.com/l/VideoEditor/badge.png)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
-# ⌨️ VideoEditor
+# 📽 VideoEditor
 *VideoEditor* facilitates video editing
 
 ## Requirements
