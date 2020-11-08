@@ -15,7 +15,7 @@
 ### Installation with CocoaPods
 
 ```ruby
-pod 'VideoEditor', '1.0'
+pod 'VideoEditor', '1.1'
 ```
 
 ### Build Project

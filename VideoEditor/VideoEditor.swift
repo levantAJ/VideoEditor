@@ -189,8 +189,10 @@ public extension VideoEditor {
 
 public enum VideoEditorError: Int, Error {
     case notFoundAudioInVideo = 10000
+}
 
-    var localizedDescription: String {
+extension VideoEditorError: LocalizedError {
+    public var errorDescription: String? {
         switch self {
         case .notFoundAudioInVideo:
             return NSLocalizedString("Cannot found audio in video!", comment: "")
